@@ -26,7 +26,7 @@
     "lint": "eslint src/",
     "test": "npm run lint",
     "prettier": "prettier src/**/*.{js,css,less} *.js --write",
-    "build:win": "set GITHUB_PUBLISH=true && set LASSO_TIMEOUT=60000 && set NODE_ENV=production && marko-starter build"
+    "build:win": "npx gulp"
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +45,5 @@
     "*.marko.js"
   ],
   "private": true,
-  "baseurl": "/ustadji"
+  "baseurl": "/test-web"
 }

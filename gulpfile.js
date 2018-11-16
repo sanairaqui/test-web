@@ -36,11 +36,11 @@ function buildShell(done) {
     exec(cmd, function (err, stdout, stderr) {
         console.log(stdout);
         err && console.log(err);
+        done();
 
     });
 
 
-    done();
 }
 
 gulp.task('build', build);
